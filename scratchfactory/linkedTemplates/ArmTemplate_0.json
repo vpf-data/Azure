@@ -122,7 +122,7 @@
 				"description": "This pipeline is used for extracting csv files from github and storing it in datalake",
 				"activities": [
 					{
-						"name": "copydatafromgithub",
+						"name": "copydatafromgithubtolake",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
