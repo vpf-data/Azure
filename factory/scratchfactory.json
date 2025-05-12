@@ -1,0 +1,9 @@
+{
+	"name": "scratchfactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "da267042-df5c-4f07-91df-fac704624fe4",
+		"tenantId": "3db896b9-424e-41e5-abdd-ead9ae33672c"
+	}
+}
