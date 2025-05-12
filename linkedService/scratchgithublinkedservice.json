@@ -1,0 +1,13 @@
+{
+	"name": "scratchgithublinkedservice",
+	"properties": {
+		"description": "This linked service is for the connection between github and adf",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
