@@ -1,0 +1,32 @@
+{
+	"name": "jsonparametersgithub",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "scratchdatalakelinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "github.json",
+				"fileSystem": "githubparameters"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"p_source_file": {
+					"type": "string"
+				},
+				"p_folder_name": {
+					"type": "string"
+				},
+				"p_file_name": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

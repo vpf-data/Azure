@@ -1,0 +1,30 @@
+{
+	"name": "sourcefilesfromgithub",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "scratchgithublinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_source_file": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().p_source_file",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
